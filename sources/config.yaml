@@ -1,0 +1,21 @@
+recipeProvider: googlefonts
+
+sources:
+  - Snark.glyphs
+
+familyName: Snark
+
+# Single master, single style — nothing to interpolate, no variable font.
+buildVariable: false
+buildStatic: true
+buildTTF: true
+buildOTF: false
+buildWebfont: false
+
+outputDir: ../fonts
+ttDir: ../fonts/ttf
+
+# Runs gftools fix-font over the output: fsType 0, USE_TYPO_METRICS,
+# vendor ID, weight class, and the Google Fonts vertical-metrics scheme.
+includeSourceFixes: true
+autohintTTF: true

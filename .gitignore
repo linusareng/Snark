@@ -1,0 +1,12 @@
+.DS_Store
+
+# gftools-builder intermediates
+sources/instance_ufos/
+sources/master_ufo/
+sources/*.ufo
+sources/*.designspace
+build.ninja
+.ninja_log
+.ninja_deps
+venv/
+TODO.local.md

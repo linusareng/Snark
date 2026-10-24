@@ -1,0 +1,38 @@
+name: Build and QA
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install font tooling
+        run: pip install gftools fontmake fontbakery shaperglot
+
+      - name: Build TTF
+        working-directory: sources
+        run: gftools builder config.yaml
+
+      - name: FontBakery (Google Fonts profile)
+        run: |
+          fontbakery check-googlefonts \
+            --html fontbakery-report.html \
+            --succinct \
+            fonts/ttf/*.ttf || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fonts-and-qa
+          path: |
+            fonts/
+            fontbakery-report.html
