@@ -10,3 +10,4 @@ build.ninja
 .ninja_deps
 venv/
 TODO.local.md
+documentation/ritlista.html
