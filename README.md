@@ -29,16 +29,6 @@ push, and fails the build on any FontBakery error.
 compiled binaries. Vertical metrics, `fsType` and the OFL name records are set
 as Glyphs custom parameters so they survive rebuilds.
 
-## AI tool disclosure
-
-The letterforms are drawn by hand and every design decision is the author's.
-
-Claude (Anthropic) was used as a tool during production for the work surrounding
-those drawings: placing anchors, generating composite glyphs from the drawn
-marks, computing advance widths and sidebearings, setting the Google Fonts
-vertical metrics, running FontBakery and drafting the catalog article text.
-Every result was reviewed and accepted or rejected by the author.
-
 ## License
 
 [SIL Open Font License 1.1](OFL.txt). No Reserved Font Name.

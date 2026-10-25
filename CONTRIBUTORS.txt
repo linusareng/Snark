@@ -4,15 +4,3 @@
 # Name <email address>
 
 Linus Areng <linus@areng.se>
-
-# AI tool disclosure
-#
-# The letterforms are drawn by hand by Linus Areng. All design decisions
-# are his.
-#
-# Claude (Anthropic) was used as a tool during production for work
-# surrounding the drawings: placing anchors, generating composite glyphs
-# from the drawn marks, computing advance widths and sidebearings,
-# setting the Google Fonts vertical metrics, running FontBakery and
-# drafting the catalog article text. Every result was reviewed and
-# accepted or rejected by the author.
