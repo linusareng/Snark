@@ -11,3 +11,9 @@ build.ninja
 venv/
 TODO.local.md
 documentation/ritlista.html
+venv/
+documentation/ritlista.py
+documentation/data/
+Uppdatera ritlista.command
+bilder/
+documentation/skapa_tecken.py

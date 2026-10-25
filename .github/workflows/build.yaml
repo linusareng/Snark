@@ -28,7 +28,7 @@ jobs:
           fontbakery check-googlefonts \
             --html fontbakery-report.html \
             --succinct \
-            fonts/ttf/*.ttf || true
+            fonts/ttf/*.ttf
 
       - uses: actions/upload-artifact@v4
         with:
