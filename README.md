@@ -4,22 +4,40 @@ A marker-hand display typeface by Linus Areng. One weight, Latin.
 
 ![Specimen](documentation/specimen.png)
 
+Snark is a felt-tip hand written at speed. No two letters lean quite the same way
+and the baseline wanders, but the strokes are decisive and the bowls stay round
+and open. The letterforms are the designer's own hand, from Swedish games
+magazines where headlines were scrawled fast and loud.
+
+It covers the Google Fonts Latin Core character set in full.
+
 ## Building
 
 ```sh
 python3 -m venv venv && source venv/bin/activate
-pip install gftools fontmake fontbakery shaperglot
+pip install -r requirements.txt
 
 cd sources && gftools builder config.yaml
 ```
 
-Output lands in `fonts/ttf/`. CI runs the same build plus FontBakery on every push.
+Output lands in `fonts/ttf/`. CI runs the same build plus FontBakery on every
+push, and fails the build on any FontBakery error.
 
 ## Source
 
 `sources/Snark.glyphs` is the canonical source — build from it, not from the
 compiled binaries. Vertical metrics, `fsType` and the OFL name records are set
 as Glyphs custom parameters so they survive rebuilds.
+
+## AI tool disclosure
+
+The letterforms are drawn by hand and every design decision is the author's.
+
+Claude (Anthropic) was used as a tool during production for the work surrounding
+those drawings: placing anchors, generating composite glyphs from the drawn
+marks, computing advance widths and sidebearings, setting the Google Fonts
+vertical metrics, running FontBakery and drafting the catalog article text.
+Every result was reviewed and accepted or rejected by the author.
 
 ## License
 
