@@ -3,7 +3,7 @@
 # Names should be added to this file as:
 # Name <email address>
 
-Linus Areng <5885677+linusareng@users.noreply.github.com>
+Linus Areng <linus@areng.se>
 
 # AI tool disclosure
 #
